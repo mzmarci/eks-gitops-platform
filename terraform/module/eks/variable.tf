@@ -82,3 +82,15 @@ variable "max_nodes" {
   default = 4
 
 }
+
+###################################################
+# Karpenter Controller IAM Role
+###################################################
+
+variable "karpenter_controller_role_arn" {
+
+  description = "IAM role ARN used by the Karpenter controller"
+
+  type = string
+
+}

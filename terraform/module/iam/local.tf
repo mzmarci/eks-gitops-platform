@@ -1,5 +1,5 @@
-# locals {
+locals {
 
-#   prefix = "${var.project_name}-${var.environment}"
+  prefix = "${var.project_name}-${var.environment}"
 
-# }
+}

@@ -149,3 +149,15 @@ variable "tags" {
   default = {}
 
 }
+
+###################################################
+# AWS Region
+###################################################
+
+variable "aws_region" {
+
+  description = "AWS region for the platform"
+
+  type = string
+
+}

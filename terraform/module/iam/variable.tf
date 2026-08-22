@@ -1,23 +1,33 @@
-# ###################################################
-# # Project Name
-# ###################################################
+###################################################
+# Project Name
+###################################################
 
-# variable "project_name" {
+variable "project_name" {
 
-#   description = "Project name"
+  description = "Project name"
 
-#   type = string
+  type = string
 
-# }
+}
 
-# ###################################################
-# # Environment
-# ###################################################
+###################################################
+# Environment
+###################################################
 
-# variable "environment" {
+variable "environment" {
 
-#   description = "Deployment environment"
+  description = "Deployment environment"
 
-#   type = string
+  type = string
 
-# }
+}
+
+variable "tags" {
+
+  description = "Common resource tags"
+
+  type = map(string)
+
+  default = {}
+
+}

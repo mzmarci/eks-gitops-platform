@@ -98,3 +98,23 @@ output "worker_ecr_repository_url" {
   value = module.ecr.worker_repository_url
 
 }
+
+output "karpenter_controller_role_arn" {
+  description = "Karpenter controller IAM role ARN"
+
+  value = module.iam.karpenter_controller_role_arn
+}
+
+
+output "karpenter_node_role_arn" {
+  description = "Karpenter node IAM role ARN"
+
+  value = module.iam.karpenter_node_role_arn
+}
+
+
+output "karpenter_node_instance_profile_name" {
+  description = "Karpenter node instance profile"
+
+  value = module.iam.karpenter_node_instance_profile_name
+}
