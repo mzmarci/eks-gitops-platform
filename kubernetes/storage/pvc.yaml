@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+
+metadata:
+  name: app-storage
+  namespace: online-boutique
+
+spec:
+  accessModes:
+    - ReadWriteOnce
+
+  storageClassName: ebs-sc
+
+  resources:
+    requests:
+      storage: 10Gi

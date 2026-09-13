@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: frontend-pod
+  namespace: online-boutique
+
+  labels:
+    app: frontend
+
+spec:
+  containers:
+    - name: frontend
+      image: nginx:alpine
+
+      ports:
+        - containerPort: 80
